@@ -1,0 +1,27 @@
+<!-- for multichose pics, modified by
+    https://github.com/JackLiaoJH/ImageSelect
+    changed to support for androidx
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pcm.library" >
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        >
+
+        <activity
+            android:name=".ui.ImageSelectActivity"
+
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:configChanges="orientation|screenSize"/>
+
+        <activity
+            android:name=".ui.ImageActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:configChanges="orientation|screenSize"/>
+
+    </application>
+</manifest>
